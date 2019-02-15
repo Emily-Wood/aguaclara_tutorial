@@ -8,7 +8,9 @@
 ```python
 from aguaclara.play import *
 
+
 xArray = u.Quantity(np.arange(0.1, 0.5, 0.01), u.m)
+
 
 @u.wraps(None, [u.m / u.s, u.m, u.m ** 2 / u.s], False)
 def re_flat_plate(velocity, dist, nu):
@@ -31,7 +33,16 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
+```Python
+x = float(input("What is x?"))
+if x == 10:
+  print('x is 10')
+elif x == 1:
+  print('x is 1')
+else:
+  print('x is something other than 1 or 10')
+
+
 
 
 

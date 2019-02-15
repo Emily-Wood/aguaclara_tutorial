@@ -4,11 +4,11 @@
 # Comments beginning with "TODO" contain the tasks that you must
 # complete in this interactive tutorial. Write your answers under each
 # TODO. Use Find (Ctrl/Cmd + F) to keep track of them.
-# 
+#
 # This is a Python file, not the interactive interpreter, so code won't
 # run immediately when you write it. You also WON'T need the triple
 # greater-than symbols (>>>) at the beginning of each line.
-# 
+#
 # Just focus on writing Python to the best of your abilities! Once
 # you're done, you'll have the chance to check your work in the next
 # tutorial section, Running Python Code: https://bit.ly/2w3PbCX
@@ -27,14 +27,14 @@ start_recording()
 #
 # Hint: It's rice and beans. Yum, string beans.
 
-favorite_food = '' # Your answer here
+favorite_food = 'rice and beans' # Your answer here
 
 print(favorite_food)
 
 # TODO 2: Calculate the volume of a 7 x 7 x 5 cube using Python math
 # operations.
 
-volume = 0 # Your answer here
+volume = 7*7*5 # Your answer here
 
 print(volume)
 
@@ -47,7 +47,9 @@ print(volume)
 
 hydraulic_processes = ['flocculation', 'sedimentation', 'stirring']
 
-# Your answer here
+hydraulic_processes.pop()
+hydraulic_processes.append('filtration')
+hydraulic_processes[1] = '1 LPS'
 
 print(hydraulic_processes)
 
@@ -56,7 +58,7 @@ print(hydraulic_processes)
 
 analogy = {'knowledge' : 'power', 'France': 'ham'}
 
-# Your answer here
+analogy['France'] = 'bacon'# Your answer here
 
 print(analogy['knowledge'] + ' ' + analogy['France'])
 
@@ -68,7 +70,7 @@ print(analogy['knowledge'] + ' ' + analogy['France'])
 # set it to 'no'.
 
 # Don't try to figure these variables out! Just write a conditional
-# that determines if the above conditions are met. 
+# that determines if the above conditions are met.
 a = True and False or not False or False
 b = True and not False or True and False
 c = False or not False and True or True
@@ -76,20 +78,26 @@ c = False or not False and True or True
 does_it_work = 'maybe'
 
 # Your answer here
+if((a or b) and not c):
+    does_it_work = 'yes'
+else:
+    does_it_work = 'no'
 
 print(does_it_work)
 
 # TODO 6: Write a for loop that multiplies x by each integer from 1 to
 # 30.
-# 
+#
 # Hint: what does += do? Check the for loops section in the Writing
 # Python Code tutorial if you're unsure. Try it with multiplication.
 
 x = 1
 
-# Your answer here
+for i in range(1,30):
+    x *= i
 
 print(x)
+
 
 # TODO 7: Write a function called 'squared' that takes in a number and
 # returns its square (to the power of 2). Then, call that function so
@@ -99,7 +107,11 @@ print(x)
 
 x = 4
 
-# Your answer here
+def squared(number):
+    return number **2
+
+for i in range(6):
+    x = squared(x)
 
 print(x)
 
