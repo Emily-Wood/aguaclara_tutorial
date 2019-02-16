@@ -58,7 +58,9 @@ Insert the Cornell seal image with:
   1. A relative file path(`/images/Cornell_University_seal.png`)
   2. A URL (https://raw.githubusercontent.com/AguaClara/aguaclara_tutorial/master/Images/Cornell_University_seal.svg.png)
 
-This is Cornell Logo
+![This image is in ``docs/images``.](./images/Cornell_University_seal.png)
+
+This is the Cornell Logo
 
 ![logo](http://ipwire.com/wp-content/uploads/2017/09/Cornell-Univesity-Seal.jpg)
 
@@ -88,7 +90,7 @@ Create a table listing your 3 favorite animals, books, and places on campus. Use
 |animals|books|places|
 |-----|:---:|-----:|
 | fish  | cookbook | antarctica |
-|rabiits   |  encyclopedia | Botanic Gardens  |
+|rabbits   |  encyclopedia | Botanic Gardens  |
 | dolphin  |  book | bed |
 
 
@@ -96,7 +98,7 @@ Create a table listing your 3 favorite animals, books, and places on campus. Use
 
 Write your favorite quote. It must be attributed to Albert Einstein.
 
-> Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - ALbert Einstein
+> Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein
 
 ## Horizontal Rules
 
